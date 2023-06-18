@@ -1,0 +1,132 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020202;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+  color: #ffffff;
+  /*  不要顯示滾動軸  */
+  &::-webkit-scrollbar{  
+      display: none; 
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* typesetting */
+.flex-grow-1{
+    flex-grow : 1;
+}
+
+.align-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-jcsb-aic{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mr-12{
+  margin-right: 12px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mb-12{
+  margin-bottom: 12px;
+}
+
+.mb-80{
+  margin-bottom: 80px;
+}
+
+/* 常見問題區塊 */
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+
+.qa{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 160px;
+}
+.qa-title{
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ffffff;
+}
+.qa-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  
+  & a:hover{
+    opacity: 1;
+  }
+}
+
+.qa-item {
+  padding: 20px 40px;
+  border: 1px solid #525252;
+  border-radius: 16px;
+  font-size: 24px;
+  display: flex;
+  gap: 20px;
+  
+  & p{
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    
+    &.show{
+      display: block;
+    }
+  }
+  
+  &:hover {
+    border-color: #ffffff;
+  }
+  &.active {
+    border: 1px solid #ffffff;
+  }
+}
+
+.add-icon, .remove-icon{
+  vertical-align: middle;
+}
